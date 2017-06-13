@@ -198,6 +198,7 @@ module ONIX
     end
 
     class SalesRights < SubsetDSL
+      element "RightsTerritory", :text
       element "SalesRightsType", :text
       element "RightsCountry", :text
 
@@ -211,6 +212,7 @@ module ONIX
     end
 
     class NotForSale < SubsetDSL
+      element "RightsTerritory", :text
       element "RightsCountry", :text
 
       def territory
